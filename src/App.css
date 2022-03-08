@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color:#f1f5f8;
+}
+
+.overlay{
+    box-shadow: 0px 0px 1000000px 100000px rgba(0,0,0,.3);
+}
