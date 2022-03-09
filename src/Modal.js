@@ -1,8 +1,10 @@
 import React,{useRef,useEffect} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import {useGlobalContext} from './App'
 
-const Modal = ({ showModalBox, closeModal, closeModalBox}) => {
+const Modal = () => {
+  const { showModalBox, closeModal, closeModalBox } = useGlobalContext()
   const showModal = useRef(null)
   
   useEffect(() => {

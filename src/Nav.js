@@ -2,8 +2,10 @@ import React,{useRef,useEffect} from 'react'
 import Header from './Header'
 import NavItems from './NavItems'
 import SocialIcons from './SocialIcons'
+import { useGlobalContext } from './App'
 
-const Nav = ({ showNavBar,closeNav,closeNavBar }) => {
+const Nav = () => {
+    const { showNavBar, closeNav, closeNavBar } = useGlobalContext()
     const showNav = useRef(null)
 
     useEffect(() => {
